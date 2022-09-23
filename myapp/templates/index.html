@@ -1,8 +1,13 @@
 {% extends 'layouts/base.html' %}
 
+{% load static %}
+
 {% block content %}
   
 <h1>{{ title }}</h1>
+
+<img src="{% static 'grado.jpeg' %}" alt="Foto_documento_grado" width="70">
+
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptate nemo dolore minima veniam non libero ea animi aspernatur. Voluptatibus libero porro velit qui iure earum maiores atque dolores neque!</p>
 
 {% endblock %}

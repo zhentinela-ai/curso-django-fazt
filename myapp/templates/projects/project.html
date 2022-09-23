@@ -5,8 +5,10 @@
 {% block content %}
   
 {% for project in projects %}
-<article class="">
-  <h1>{{ project.name }}</h1>
+<article class="card">
+  <a href="{% url 'project_detail' project.id %}">
+    <h1>{{ project.name }}</h1>
+  </a>
 </article>
 {% endfor %}
 
